@@ -1,0 +1,37 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:ui="http://java.sun.com/jsf/facelets">
+    <nav class="navbar">
+        <div class="container navbar__container">
+            <h:link styleClass="navbar__logo__link" outcome="index">
+                <h:graphicImage styleClass="navbar__logo__image" value="/assets/images/logo.svg" alt="Logo Trans-Tads" title="Logo Trans-Tads"/>
+            </h:link>
+            <div class="navbar__links">
+                <h:link styleClass="navbar__link" outcome="flights">Voos</h:link>
+                <div class="navbar__dropdown">
+                    <span class="navbar__dropdown__text">Cadastros</span>
+                    <ul class="navbar__dropdown__list">
+                        <h:link styleClass="navbar__link navbar__dropdown__list__item" outcome="flights">Voos</h:link>
+                    </ul>
+                </div>
+                <div class="navbar__dropdown">
+                    <span class="navbar__dropdown__text">Relatórios</span>
+                    <ul class="navbar__dropdown__list">
+                        <h:link styleClass="navbar__link navbar__dropdown__list__item" outcome="flights">Voos</h:link>
+                        <h:link styleClass="navbar__link navbar__dropdown__list__item" outcome="flights">Voos</h:link>
+                        <h:link styleClass="navbar__link navbar__dropdown__list__item" outcome="flights">Voos</h:link>
+                        <h:link styleClass="navbar__link navbar__dropdown__list__item" outcome="flights">Voos</h:link>
+                    </ul>
+                </div>
+                <div class="navbar__dropdown">
+                    <span class="navbar__dropdown__text">Minha Conta</span>
+                    <ul class="navbar__dropdown__list">
+                        <h:link styleClass="navbar__link navbar__dropdown__list__item" outcome="flights">Voos</h:link>
+                        <h:link styleClass="navbar__link navbar__dropdown__list__item" outcome="flights">Voos</h:link>
+                        <h:link styleClass="navbar__link navbar__dropdown__list__item" outcome="flights">Voos</h:link>
+                        <h:link styleClass="navbar__link navbar__dropdown__list__item" outcome="flights">Voos</h:link>
+                    </ul>
+                </div>
+                <h:link styleClass="button button--rounded" outcome="flights">Check-In</h:link>
+            </div>
+        </div>
+    </nav>
+</ui:composition>
