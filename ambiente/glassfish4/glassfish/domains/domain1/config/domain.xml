@@ -42,6 +42,7 @@
   </resources>
   <servers>
     <server config-ref="server-config" name="server">
+      <application-ref ref="corportativo_war_exploded" virtual-servers="server"></application-ref>
       <resource-ref ref="jdbc/__TimerPool"></resource-ref>
       <resource-ref ref="jdbc/__default"></resource-ref>
       <resource-ref ref="jms/__defaultConnectionFactory"></resource-ref>
@@ -429,5 +430,15 @@
     <secure-admin-principal dn="CN=localhost-instance,OU=GlassFish,O=Oracle Corporation,L=Santa Clara,ST=California,C=US"></secure-admin-principal>
   </secure-admin>
   <clusters></clusters>
-  <applications></applications>
+  <applications>
+    <application context-root="/corportativo_war_exploded" object-type="user" name="corportativo_war_exploded" directory-deployed="true" location="file:/C:/Users/jhonny.menarim/Desktop/dac/sistemas/corportativo/out/artifacts/corportativo_war_exploded/">
+      <property name="appLocation" value="file:/C:/Users/jhonny.menarim/Desktop/dac/sistemas/corportativo/out/artifacts/corportativo_war_exploded/"></property>
+      <property name="archiveType" value="war"></property>
+      <property name="defaultAppName" value="corportativo_war_exploded"></property>
+      <module name="corportativo_war_exploded">
+        <engine sniffer="security"></engine>
+        <engine sniffer="web"></engine>
+      </module>
+    </application>
+  </applications>
 </domain>

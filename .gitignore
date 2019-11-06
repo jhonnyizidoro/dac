@@ -1,2 +1,2 @@
-ambiente/glassfish4/glassfish/domains/logs/**/*
-ambiente/glassfish4/glassfish/domains/osgi-cache/**/*
+ambiente/glassfish4/glassfish/domains/**/logs/**/*
+ambiente/glassfish4/glassfish/domains/**/osgi-cache/**/*

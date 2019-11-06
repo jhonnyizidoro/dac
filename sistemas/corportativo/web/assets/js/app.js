@@ -19,4 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
+    document.querySelectorAll('[data-mask]').forEach(input => IMask(input, { mask: input.dataset.mask }))
+
 })

@@ -6,11 +6,11 @@
                 <h:inputText styleClass="default__input" value="#{employeeMB.employee.name}" a:placeholder="Nome" a:aria-label="Insira seu nome" a:required="true"/>
                 <h:inputText styleClass="default__input" value="#{employeeMB.employee.email}" a:placeholder="E-mail" a:aria-label="Insira seu E-mail" a:required="true" a:type="email"/>
                 <div class="default__inline">
-                    <h:inputText styleClass="default__input" value="#{employeeMB.employee.cpf}" a:placeholder="CPF" a:aria-label="Insira seu CPF" a:required="true"/>
+                    <h:inputText styleClass="default__input" value="#{employeeMB.employee.cpf}" a:placeholder="CPF" a:aria-label="Insira seu CPF" a:required="true" a:data-mask="000.000.000-00"/>
                     <h:inputText styleClass="default__input" value="#{employeeMB.employee.register}" a:placeholder="Registro" a:aria-label="Insira seu Registro" a:required="true"/>
                 </div>
                 <div class="default__inline">
-                    <h:inputText styleClass="default__input" value="#{employeeMB.employee.birthDate}" a:placeholder="Data de nascimento" a:aria-label="Insira sua data de nascimento" a:required="true" mask="00/00/0000"/>
+                    <h:inputText styleClass="default__input" value="#{employeeMB.employee.birthDate}" a:placeholder="Data de nascimento" a:aria-label="Insira sua data de nascimento" a:required="true" a:data-mask="00/00/0000"/>
                     <h:selectOneMenu styleClass="default__input" value="#{employeeMB.employee.role}" a:aria-label="Selecione o perfil" a:required="true">
                         <f:selectItem itemValue="" itemLabel="Perfil"/>
                         <f:selectItem itemValue="0" itemLabel="Colaborador"/>
@@ -19,7 +19,7 @@
                 </div>
                 <div class="default__title">Dados do endereço</div>
                 <div class="default__inline">
-                    <h:inputText styleClass="default__input" value="#{employeeMB.employee.address.zipCode}" a:placeholder="CEP" a:aria-label="Insira seu CEP" a:required="true"/>
+                    <h:inputText styleClass="default__input" value="#{employeeMB.employee.address.zipCode}" a:placeholder="CEP" a:aria-label="Insira seu CEP" a:required="true" a:data-mask="00000-000"/>
                     <h:inputText styleClass="default__input" value="#{employeeMB.employee.address.number}" a:placeholder="Número" a:aria-label="Insira seu Número" a:required="true"/>
                 </div>
                 <h:inputText styleClass="default__input" value="#{employeeMB.employee.address.street}" a:placeholder="Rua" a:aria-label="Insira sua Rua" a:required="true"/>
