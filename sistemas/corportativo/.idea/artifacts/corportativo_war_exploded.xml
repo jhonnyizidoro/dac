@@ -11,6 +11,7 @@
           <element id="library" level="project" name="Hibernate 5.4.5-5.4.5" />
           <element id="library" level="project" name="PrimeFaces-6.1" />
           <element id="library" level="project" name="mysql-connector-java-8.0.17" />
+          <element id="library" level="project" name="javax.ws.rs-api-2.1.1" />
         </element>
       </element>
     </root>

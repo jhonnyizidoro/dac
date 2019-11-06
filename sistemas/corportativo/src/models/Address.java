@@ -26,6 +26,7 @@ public class Address implements Serializable {
         this.id = id;
     }
 
+    @Column(name = "zip_code")
     public String getZipCode() {
         return zipCode;
     }

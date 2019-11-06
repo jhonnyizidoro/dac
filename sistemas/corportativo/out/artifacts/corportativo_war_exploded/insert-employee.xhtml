@@ -10,7 +10,7 @@
                     <h:inputText styleClass="default__input" value="#{employeeMB.employee.register}" a:placeholder="Registro" a:aria-label="Insira seu Registro" a:required="true"/>
                 </div>
                 <div class="default__inline">
-                    <h:inputText styleClass="default__input" value="#{employeeMB.employee.birthDate}" a:placeholder="Data de nascimento" a:aria-label="Insira sua data de nascimento" a:required="true"/>
+                    <h:inputText styleClass="default__input" value="#{employeeMB.employee.birthDate}" a:placeholder="Data de nascimento" a:aria-label="Insira sua data de nascimento" a:required="true" mask="00/00/0000"/>
                     <h:selectOneMenu styleClass="default__input" value="#{employeeMB.employee.role}" a:aria-label="Selecione o perfil" a:required="true">
                         <f:selectItem itemValue="" itemLabel="Perfil"/>
                         <f:selectItem itemValue="0" itemLabel="Colaborador"/>
@@ -28,11 +28,11 @@
                     <h:inputText styleClass="default__input" value="#{employeeMB.employee.address.neighborhood}" a:placeholder="Bairro" a:aria-label="Insira seu Bairro" a:required="true"/>
                 </div>
                 <div class="default__inline">
-                    <h:selectOneMenu styleClass="default__input" a:aria-label="Selecione o estado" a:required="true">
+                    <h:selectOneMenu styleClass="default__input" a:aria-label="Selecione o estado" a:required="true" a:id="state">
                         <f:selectItem itemValue="" itemLabel="Estado"/>
                         <f:selectItems value="#{employeeMB.states}" var="state" itemValue="#{state.id}" itemLabel="#{state.name}"/>
                     </h:selectOneMenu>
-                    <h:selectOneMenu styleClass="default__input" a:aria-label="Selecione a cidade" a:required="true">
+                    <h:selectOneMenu styleClass="default__input" a:aria-label="Selecione a cidade" a:required="true" a:id="city">
                         <f:selectItem itemValue="" itemLabel="Cidade"/>
                     </h:selectOneMenu>
                 </div>

@@ -1,43 +1,44 @@
 @echo off
-REM
-REM  DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
-REM
-REM  Copyright (c) 2008-2013 Oracle and/or its affiliates. All rights reserved.
-REM
-REM  The contents of this file are subject to the terms of either the GNU
-REM  General Public License Version 2 only ("GPL") or the Common Development
-REM  and Distribution License("CDDL") (collectively, the "License").  You
-REM  may not use this file except in compliance with the License.  You can
-REM  obtain a copy of the License at
-REM  https://glassfish.dev.java.net/public/CDDL+GPL_1_1.html
-REM  or packager/legal/LICENSE.txt.  See the License for the specific
-REM  language governing permissions and limitations under the License.
-REM
-REM  When distributing the software, include this License Header Notice in each
-REM  file and include the License file at packager/legal/LICENSE.txt.
-REM
-REM  GPL Classpath Exception:
-REM  Oracle designates this particular file as subject to the "Classpath"
-REM  exception as provided by Oracle in the GPL Version 2 section of the License
-REM  file that accompanied this code.
-REM
-REM  Modifications:
-REM  If applicable, add the following below the License Header, with the fields
-REM  enclosed by brackets [] replaced by your own identifying information:
-REM  "Portions Copyright [year] [name of copyright owner]"
-REM
-REM  Contributor(s):
-REM  If you wish your version of this file to be governed by only the CDDL or
-REM  only the GPL Version 2, indicate your decision by adding "[Contributor]
-REM  elects to include this software in this distribution under the [CDDL or GPL
-REM  Version 2] license."  If you don't indicate a single choice of license, a
-REM  recipient has the option to distribute your version of this file under
-REM  either the CDDL, the GPL Version 2 or to extend the choice of license to
-REM  its licensees as provided above.  However, if you add GPL Version 2 code
-REM  and therefore, elected the GPL Version 2 license, then the option applies
-REM  only if the new code is made subject to such option by the copyright
-REM  holder.
-REM
+rem
+rem
+rem DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
+rem
+rem Copyright (c) 2008-2014 Oracle and/or its affiliates. All rights reserved.
+rem
+rem The contents of this file are subject to the terms of either the GNU
+rem General Public License Version 2 only ("GPL") or the Common Development
+rem and Distribution License("CDDL") (collectively, the "License").  You
+rem may not use this file except in compliance with the License.  You can
+rem obtain a copy of the License at
+rem https://glassfish.dev.java.net/public/CDDL+GPL_1_1.html
+rem or packager/legal/LICENSE.txt.  See the License for the specific
+rem language governing permissions and limitations under the License.
+rem
+rem When distributing the software, include this License Header Notice in each
+rem file and include the License file at glassfish/bootstrap/legal/LICENSE.txt.
+rem
+rem GPL Classpath Exception:
+rem Oracle designates this particular file as subject to the "Classpath"
+rem exception as provided by Oracle in the GPL Version 2 section of the License
+rem file that accompanied this code.
+rem
+rem Modifications:
+rem If applicable, add the following below the License Header, with the fields
+rem enclosed by brackets [] replaced by your own identifying information:
+rem "Portions Copyright [year] [name of copyright owner]"
+rem
+rem Contributor(s):
+rem If you wish your version of this file to be governed by only the CDDL or
+rem only the GPL Version 2, indicate your decision by adding "[Contributor]
+rem elects to include this software in this distribution under the [CDDL or GPL
+rem Version 2] license."  If you don't indicate a single choice of license, a
+rem recipient has the option to distribute your version of this file under
+rem either the CDDL, the GPL Version 2 or to extend the choice of license to
+rem its licensees as provided above.  However, if you add GPL Version 2 code
+rem and therefore, elected the GPL Version 2 license, then the option applies
+rem only if the new code is made subject to such option by the copyright
+rem holder.
+rem
 
 @REM This script is a bootstrap stub. It invokes pkg-bootstrap to download
 @REM the actual software.
@@ -72,11 +73,11 @@ set JRMT_JDK_KEY=HKEY_LOCAL_MACHINE\SOFTWARE\JRockit\Java Development Kit
 set JRMT_JRE_KEY=HKEY_LOCAL_MACHINE\SOFTWARE\JRockit\Java Runtime Environment
 set JRRT_KEY=HKEY_LOCAL_MACHINE\SOFTWARE\JRockit\Real Time
 
-@REM Get Java runtime location from the registry. We try 1.6 first, then 1.7
-(FOR /F "tokens=1,2*" %%A IN ('reg query "%JDK_KEY%\1.6" /v JavaHome') DO SET MY_JAVA_HOME=%%C) 2>nul
-(if not exist "%MY_JAVA_HOME%\bin" FOR /F "tokens=1,2*" %%A IN ('reg query "%JRE_KEY%\1.6" /v JavaHome') DO SET MY_JAVA_HOME=%%C) 2>nul
-(if not exist "%MY_JAVA_HOME%\bin" FOR /F "tokens=1,2*" %%A IN ('reg query "%JDK_KEY%\1.7" /v JavaHome') DO SET MY_JAVA_HOME=%%C) 2>nul
+@REM Get Java runtime location from the registry. We try 1.7 first, then 1.8
+(FOR /F "tokens=1,2*" %%A IN ('reg query "%JDK_KEY%\1.7" /v JavaHome') DO SET MY_JAVA_HOME=%%C) 2>nul
 (if not exist "%MY_JAVA_HOME%\bin" FOR /F "tokens=1,2*" %%A IN ('reg query "%JRE_KEY%\1.7" /v JavaHome') DO SET MY_JAVA_HOME=%%C) 2>nul
+(if not exist "%MY_JAVA_HOME%\bin" FOR /F "tokens=1,2*" %%A IN ('reg query "%JDK_KEY%\1.8" /v JavaHome') DO SET MY_JAVA_HOME=%%C) 2>nul
+(if not exist "%MY_JAVA_HOME%\bin" FOR /F "tokens=1,2*" %%A IN ('reg query "%JRE_KEY%\1.8" /v JavaHome') DO SET MY_JAVA_HOME=%%C) 2>nul
 
 @REM Could not get from registry. See if JAVA_HOME is set
 if not exist "%MY_JAVA_HOME%\bin" set MY_JAVA_HOME=%JAVA_HOME%
@@ -133,6 +134,7 @@ if defined HTTP_PROXY echo proxy.URL=%HTTP_PROXY%>> "%BOOTSTRAPPROPS%"
 if defined HTTPS_PROXY echo proxy.secure.URL=%HTTPS_PROXY%>> "%BOOTSTRAPPROPS%"
 if not defined HTTP_PROXY echo proxy.use.system=true>>"%BOOTSTRAPPROPS%"
 if /I %MY_NAME%==updatetool echo install.updatetool=true>> "%BOOTSTRAPPROPS%"
+echo refresh.catalog=all>> "%BOOTSTRAPPROPS%"
 
 echo. >> "%BOOTSTRAPPROPS%"
 
@@ -146,10 +148,7 @@ set MY_IMAGE_PATH=%MY_HOME%\..
 
 @REM Finally, run pkg-bootstrap!
 echo.
-@REM we do refresh to work around UPDATECENTER2-2219
-cd "%MY_IMAGE_PATH%"
 @echo on
-"%MY_JAVA_CMD%" -Dimage.path="%MY_IMAGE_PATH%" -jar "%MY_HOME%\..\%JAVACLIENTJAR%" refresh
 "%MY_JAVA_CMD%" -Dimage.path="%MY_IMAGE_PATH%" -jar "%MY_HOME%\..\%BOOTSTRAPJAR%" "%BOOTSTRAPPROPS%"
 @echo off
 
@@ -191,7 +190,7 @@ goto findjavadone
 
 :nojavaerror
 echo.
-echo Failed to locate a Java runtime. Please install Java SE 6 or newer.
+echo Failed to locate a Java runtime. Please install Java SE 7 or newer.
 echo If you already have one of these installed on your system then either:
 echo Set the JAVA_HOME environment variable to the Java SE install location.
 echo  or
@@ -222,4 +221,3 @@ goto cleanup
 :end
 @REM This exit sequence causes the return code to be passed to a calling process
 exit /B %RETURN_CODE%
-

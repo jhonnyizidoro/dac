@@ -1,5 +1,8 @@
 package models;
 
+import org.hibernate.Session;
+import util.HibernateUtil;
+
 import java.io.Serializable;
 import javax.persistence.*;
 import java.util.List;
@@ -57,5 +60,14 @@ public class City implements Serializable {
 
     public void setAirports(List<Airport> airports) {
         this.airports = airports;
+    }
+
+    public static List<City> getByStateId(int stateId) {
+        Session session = HibernateUtil.getSession();
+        Query query = session.createQuery("FROM City WHERE state.id = :stateId");
+        query.setParameter("stateId", stateId);
+        @SuppressWarnings("unchecked")
+        List<City> cities = (List<City>) query.getResultList();
+        return cities;
     }
 }

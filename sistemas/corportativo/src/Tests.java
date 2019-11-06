@@ -1,3 +1,4 @@
+import models.City;
 import models.Employee;
 import models.State;
 
@@ -5,7 +6,7 @@ import java.util.List;
 
 public class Tests {
     public static void main(String[] args) {
-        getAllStates();
+        getCitiesByState();
     }
     
     private static void findEmployee() {
@@ -21,6 +22,10 @@ public class Tests {
         for (State state : states) {
             System.out.println(state.getName());
         }
+    }
+
+    private static void getCitiesByState() {
+        List<City> cities = City.getByStateId(1);
     }
     
 }

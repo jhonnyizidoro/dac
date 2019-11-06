@@ -28,11 +28,11 @@
                     <h:inputText styleClass="default__input" value="#{employeeMB.employee.address.neighborhood}" a:placeholder="Bairro" a:aria-label="Insira seu Bairro" a:required="true"/>
                 </div>
                 <div class="default__inline">
-                    <h:selectOneMenu styleClass="default__input" a:aria-label="Selecione o estado" a:required="true">
+                    <h:selectOneMenu styleClass="default__input" a:aria-label="Selecione o estado" a:required="true" a:id="state">
                         <f:selectItem itemValue="" itemLabel="Estado"/>
                         <f:selectItems value="#{employeeMB.states}" var="state" itemValue="#{state.id}" itemLabel="#{state.name}"/>
                     </h:selectOneMenu>
-                    <h:selectOneMenu styleClass="default__input" a:aria-label="Selecione a cidade" a:required="true">
+                    <h:selectOneMenu styleClass="default__input" a:aria-label="Selecione a cidade" a:required="true" a:id="city">
                         <f:selectItem itemValue="" itemLabel="Cidade"/>
                     </h:selectOneMenu>
                 </div>
