@@ -32,11 +32,6 @@ public class LoginMB implements Serializable {
         } catch (Exception e) {
             e.printStackTrace();
         }
-//        if (Employee.auth(this.email, this.password)) {
-//            //Logou
-//        } else {
-//            //Nao logou
-//        }
     }
 
 }

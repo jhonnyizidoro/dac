@@ -6,12 +6,80 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac4756f2-6fb6-4aea-ae4c-baecf49c760a" name="Default Changelist" comment="" />
+    <list default="true" id="ac4756f2-6fb6-4aea-ae4c-baecf49c760a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mb/EmployeeMB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/StateResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/employees.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/insert-employee.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ambiente/glassfish4/glassfish/domains/domain1/config/domain.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ambiente/glassfish4/glassfish/domains/domain1/config/domain.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ambiente/glassfish4/glassfish/domains/domain1/config/domain.xml.bak" beforeDir="false" afterPath="$PROJECT_DIR$/../../ambiente/glassfish4/glassfish/domains/domain1/config/domain.xml.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ambiente/glassfish4/glassfish/domains/domain1/config/local-password" beforeDir="false" afterPath="$PROJECT_DIR$/../../ambiente/glassfish4/glassfish/domains/domain1/config/local-password" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ambiente/glassfish4/glassfish/domains/domain1/config/pid.prev" beforeDir="false" afterPath="$PROJECT_DIR$/../../ambiente/glassfish4/glassfish/domains/domain1/config/pid.prev" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ambiente/glassfish4/glassfish/domains/domain1/logs/server.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../ambiente/glassfish4/glassfish/domains/domain1/logs/server.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/corportativo_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/corportativo_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corportativo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/corportativo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/corportativo_war_exploded/WEB-INF/classes/Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/corportativo_war_exploded/WEB-INF/classes/Tests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/corportativo_war_exploded/WEB-INF/classes/mb/LoginMB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/corportativo_war_exploded/WEB-INF/classes/mb/LoginMB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/corportativo_war_exploded/WEB-INF/classes/models/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/corportativo_war_exploded/WEB-INF/classes/models/State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/corportativo_war_exploded/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/corportativo_war_exploded/assets/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/corportativo_war_exploded/components/navbar.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/corportativo_war_exploded/components/navbar.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/corportativo_war_exploded/templates/main.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/corportativo_war_exploded/templates/main.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/corportativo/Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/corportativo/Tests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/corportativo/mb/LoginMB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/corportativo/mb/LoginMB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/corportativo/models/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/corportativo/models/State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mb/LoginMB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mb/LoginMB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/components/navbar.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/components/navbar.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/main.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/main.xhtml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="corporativo: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="corporativo: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="employees: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -20,8 +88,12 @@
         <option value="hibernate-main-5.2" />
         <option value="Jsp File" />
         <option value="jsf" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -31,25 +103,31 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1TDSeDxw3jaE1VmzMEjfypf1S9y" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\jhonn\Desktop\dac\sistemas\corportativo\web" />
-      <recent name="C:\Users\jhonn\Desktop\dac\sistemas\corportativo\web\WEB-INF" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jhonn\Desktop\dac\sistemas\corportativo\web\WEB-INF\lib" />
       <recent name="C:\Users\jhonn\Desktop\dac\sistemas\corportativo\web" />
       <recent name="C:\Users\jhonn\Desktop\dac\sistemas\corportativo\src" />
       <recent name="C:\Users\jhonn\Desktop\dac\sistemas\corportativo\src\models" />
       <recent name="C:\Users\jhonn\Desktop\dac\sistemas\corportativo\src\mb" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jhonn\Desktop\dac\sistemas\corportativo\web" />
+      <recent name="C:\Users\jhonn\Desktop\dac\sistemas\corportativo\web\WEB-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -64,7 +142,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="GlassFish Server.GlassFish 4.1.2">
+    <configuration name="Tests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tests" />
+      <module name="corportativo" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GlassFish 4.1.2" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 4.1.2" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/corportativo_war_exploded/" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -137,6 +222,11 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Tests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -149,10 +239,22 @@
       <option name="presentableId" value="Default" />
       <updated>1572993265869</updated>
       <workItem from="1572993271994" duration="1140000" />
+      <workItem from="1572994662421" duration="6685000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

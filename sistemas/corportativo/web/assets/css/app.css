@@ -27,6 +27,7 @@ body {
     align-items: center;
     display: flex;
     justify-content: center;
+    padding-top: 49px;
 }
 
 /** CONTAINER **/
@@ -63,6 +64,20 @@ body {
 
 .default__input:focus {
     outline: none;
+}
+
+.default__inline {
+    display: flex;
+}
+
+.default__inline >*:first-child {
+    margin-right: 5px;
+}
+
+.default__title {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 5px 0 12px;
 }
 
 /** BUTTONS **/
@@ -173,7 +188,7 @@ body {
     right: 0;
     text-align: center;
     transform: translateY(100%) scale(0);
-    transform-origin: 100% 0;
+    transform-origin: 50% 0;
     transition: 250ms;
 }
 

@@ -1,0 +1,43 @@
+<ui:composition template="templates/main.xhtml" xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:a="http://xmlns.jcp.org/jsf/passthrough" xmlns:f="http://java.sun.com/jsf/core">
+    <ui:define name="content">
+        <div class="card">
+            <h:form styleClass="default">
+                <div class="default__title">Dados pessoais</div>
+                <h:inputText styleClass="default__input" value="#{employeeMB.employee.name}" a:placeholder="Nome" a:aria-label="Insira seu nome" a:required="true"/>
+                <h:inputText styleClass="default__input" value="#{employeeMB.employee.email}" a:placeholder="E-mail" a:aria-label="Insira seu E-mail" a:required="true" a:type="email"/>
+                <div class="default__inline">
+                    <h:inputText styleClass="default__input" value="#{employeeMB.employee.cpf}" a:placeholder="CPF" a:aria-label="Insira seu CPF" a:required="true"/>
+                    <h:inputText styleClass="default__input" value="#{employeeMB.employee.register}" a:placeholder="Registro" a:aria-label="Insira seu Registro" a:required="true"/>
+                </div>
+                <div class="default__inline">
+                    <h:inputText styleClass="default__input" value="#{employeeMB.employee.birthDate}" a:placeholder="Data de nascimento" a:aria-label="Insira sua data de nascimento" a:required="true" mask="00/00/0000"/>
+                    <h:selectOneMenu styleClass="default__input" value="#{employeeMB.employee.role}" a:aria-label="Selecione o perfil" a:required="true">
+                        <f:selectItem itemValue="" itemLabel="Perfil"/>
+                        <f:selectItem itemValue="0" itemLabel="Colaborador"/>
+                        <f:selectItem itemValue="1" itemLabel="Gerente"/>
+                    </h:selectOneMenu>
+                </div>
+                <div class="default__title">Dados do endereço</div>
+                <div class="default__inline">
+                    <h:inputText styleClass="default__input" value="#{employeeMB.employee.address.zipCode}" a:placeholder="CEP" a:aria-label="Insira seu CEP" a:required="true"/>
+                    <h:inputText styleClass="default__input" value="#{employeeMB.employee.address.number}" a:placeholder="Número" a:aria-label="Insira seu Número" a:required="true"/>
+                </div>
+                <h:inputText styleClass="default__input" value="#{employeeMB.employee.address.street}" a:placeholder="Rua" a:aria-label="Insira sua Rua" a:required="true"/>
+                <div class="default__inline">
+                    <h:inputText styleClass="default__input" value="#{employeeMB.employee.address.complement}" a:placeholder="Complemento" a:aria-label="Insira seu Complemento"/>
+                    <h:inputText styleClass="default__input" value="#{employeeMB.employee.address.neighborhood}" a:placeholder="Bairro" a:aria-label="Insira seu Bairro" a:required="true"/>
+                </div>
+                <div class="default__inline">
+                    <h:selectOneMenu styleClass="default__input" a:aria-label="Selecione o estado" a:required="true">
+                        <f:selectItem itemValue="" itemLabel="Estado"/>
+                        <f:selectItems value="#{employeeMB.states}" var="state" itemValue="#{state.id}" itemLabel="#{state.name}"/>
+                    </h:selectOneMenu>
+                    <h:selectOneMenu styleClass="default__input" a:aria-label="Selecione a cidade" a:required="true">
+                        <f:selectItem itemValue="" itemLabel="Cidade"/>
+                    </h:selectOneMenu>
+                </div>
+                <h:commandButton styleClass="button button--default" action="#{employeeMB.store}" value="Salvar colaborador"/>
+            </h:form>
+        </div>
+    </ui:define>
+</ui:composition>

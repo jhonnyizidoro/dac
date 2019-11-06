@@ -1,7 +1,11 @@
 package models;
 
+import org.hibernate.Session;
+import util.HibernateUtil;
+
 import java.io.Serializable;
 import javax.persistence.*;
+import javax.persistence.criteria.CriteriaQuery;
 import java.util.List;
 
 @Entity
@@ -45,5 +49,14 @@ public class State implements Serializable {
 
     public void setCities(List<City> cities) {
         this.cities = cities;
+    }
+
+    public static List<State> get() {
+        Session session = HibernateUtil.getSession();
+        CriteriaQuery<State> criteriaQuery = session.getCriteriaBuilder().createQuery(State.class);
+        criteriaQuery.from(State.class);
+        List<State> states = session.createQuery(criteriaQuery).getResultList();
+        session.close();
+        return states;
     }
 }
