@@ -44,5 +44,6 @@
     <orderEntry type="library" scope="PROVIDED" name="GlassFish 4.1.0 - EJB" level="application_server_libraries" />
     <orderEntry type="library" scope="PROVIDED" name="GlassFish 4.1.0 - Connector Architecture (JSR 322)" level="application_server_libraries" />
     <orderEntry type="library" scope="PROVIDED" name="GlassFish 4.1.0 - WebSocket" level="application_server_libraries" />
+    <orderEntry type="library" name="gson-2.8.6" level="project" />
   </component>
 </module>

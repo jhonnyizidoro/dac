@@ -2,6 +2,8 @@ package mb;
 
 import models.Employee;
 import models.State;
+import org.hibernate.Session;
+import util.HibernateUtil;
 
 import java.io.Serializable;
 import java.util.List;
@@ -29,14 +31,19 @@ public class EmployeeMB implements Serializable {
         this.employee = employee;
     }
 
-    public void store() {
-    }
-
     public List<State> getStates() {
         return states;
     }
 
     public void setStates(List<State> states) {
         this.states = states;
+    }
+
+    public void store() {
+        //Session session = HibernateUtil.getSession();
+        //session.beginTransaction();
+        //session.save(this.employee);
+        //session.getTransaction().commit();
+        //System.out.println("USUARIO CRIADO!!!");
     }
 }

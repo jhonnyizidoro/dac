@@ -1,6 +1,8 @@
 package models;
 
+import com.google.gson.annotations.Expose;
 import org.hibernate.Session;
+import org.hibernate.Query;
 import util.HibernateUtil;
 
 import java.io.Serializable;
@@ -10,8 +12,11 @@ import java.util.List;
 @Entity
 @Table(name = "cities")
 public class City implements Serializable {
+    @Expose
     private int id;
+    @Expose
     private String name;
+    @Expose
     private State state;
     private List<Address> addresses;
     private List<Airport> airports;
@@ -67,7 +72,7 @@ public class City implements Serializable {
         Query query = session.createQuery("FROM City WHERE state.id = :stateId");
         query.setParameter("stateId", stateId);
         @SuppressWarnings("unchecked")
-        List<City> cities = (List<City>) query.getResultList();
+        List<City> cities = query.list();
         return cities;
     }
 }

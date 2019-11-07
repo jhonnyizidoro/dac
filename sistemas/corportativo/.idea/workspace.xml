@@ -7,17 +7,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac4756f2-6fb6-4aea-ae4c-baecf49c760a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_8_6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ambiente/glassfish4/glassfish/domains/domain1/config/domain.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ambiente/glassfish4/glassfish/domains/domain1/config/domain.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ambiente/glassfish4/glassfish/domains/domain1/config/domain.xml.bak" beforeDir="false" afterPath="$PROJECT_DIR$/../../ambiente/glassfish4/glassfish/domains/domain1/config/domain.xml.bak" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ambiente/glassfish4/glassfish/domains/domain1/config/local-password" beforeDir="false" afterPath="$PROJECT_DIR$/../../ambiente/glassfish4/glassfish/domains/domain1/config/local-password" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ambiente/glassfish4/glassfish/domains/domain1/config/pid" beforeDir="false" afterPath="$PROJECT_DIR$/../../ambiente/glassfish4/glassfish/domains/domain1/config/pid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ambiente/glassfish4/glassfish/domains/domain1/config/pid.prev" beforeDir="false" afterPath="$PROJECT_DIR$/../../ambiente/glassfish4/glassfish/domains/domain1/config/pid.prev" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ambiente/glassfish4/glassfish/domains/domain1/generated/policy/corportativo_war_exploded/corportativo_war_exploded/granted.policy" beforeDir="false" afterPath="$PROJECT_DIR$/../../ambiente/glassfish4/glassfish/domains/domain1/generated/policy/corportativo_war_exploded/corportativo_war_exploded/granted.policy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ambiente/gson-2.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/corportativo_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/corportativo_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/corportativo/META-INF/corportativo.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/insert-employee.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/insert-employee.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/main.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/main.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corportativo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/corportativo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/corportativo_war_exploded/WEB-INF/classes/models/City.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/corportativo_war_exploded/WEB-INF/classes/models/City.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/corportativo_war_exploded/WEB-INF/classes/services/CityResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/corportativo_war_exploded/WEB-INF/classes/services/CityResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/corportativo/models/City.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/corportativo/models/City.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/corportativo/services/CityResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/corportativo/services/CityResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mb/EmployeeMB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mb/EmployeeMB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/CityResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/CityResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/HibernateUtil.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,8 +109,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/gson-2.8.6.jar!/" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
@@ -294,6 +305,7 @@
       <workItem from="1572993271994" duration="1140000" />
       <workItem from="1572994662421" duration="6685000" />
       <workItem from="1573051411052" duration="572000" />
+      <workItem from="1573101840460" duration="2209000" />
     </task>
     <servers />
   </component>

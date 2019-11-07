@@ -431,8 +431,8 @@
   </secure-admin>
   <clusters></clusters>
   <applications>
-    <application context-root="/corportativo_war_exploded" object-type="user" name="corportativo_war_exploded" directory-deployed="true" location="file:/C:/Users/jhonny.menarim/Desktop/dac/sistemas/corportativo/out/artifacts/corportativo_war_exploded/">
-      <property name="appLocation" value="file:/C:/Users/jhonny.menarim/Desktop/dac/sistemas/corportativo/out/artifacts/corportativo_war_exploded/"></property>
+    <application context-root="/corportativo_war_exploded" object-type="user" name="corportativo_war_exploded" directory-deployed="true" location="file:/C:/Users/jhonn/Desktop/dac/sistemas/corportativo/out/artifacts/corportativo_war_exploded/">
+      <property name="appLocation" value="file:/C:/Users/jhonn/Desktop/dac/sistemas/corportativo/out/artifacts/corportativo_war_exploded/"></property>
       <property name="archiveType" value="war"></property>
       <property name="defaultAppName" value="corportativo_war_exploded"></property>
       <module name="corportativo_war_exploded">

@@ -1,5 +1,6 @@
 package models;
 
+import com.google.gson.annotations.Expose;
 import org.hibernate.Session;
 import util.HibernateUtil;
 
@@ -11,8 +12,11 @@ import java.util.List;
 @Entity
 @Table(name = "states")
 public class State implements Serializable {
+    @Expose
     private int id;
+    @Expose
     private String name;
+    @Expose
     private String code;
     private List<City> cities;
 
